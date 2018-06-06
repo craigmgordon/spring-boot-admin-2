@@ -1,0 +1,17 @@
+server:
+  port: 0
+  
+spring:
+  application:
+    name: client-service
+  
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:*.
